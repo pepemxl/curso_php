@@ -58,7 +58,7 @@ logs:
 DOCKERFILE_DIR_DOCS := ./src/containers/docs
 IMAGE_NAME_DOCS := php-docs
 CONTAINER_NAME_DOCS := php-docs
-PORT_DOCS := 8000
+PORT_DOCS := 8080
 
 # Construye la imagen Docker usando el Dockerfile en /src/containers/docs/
 build_docs:
