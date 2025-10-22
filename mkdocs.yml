@@ -21,9 +21,13 @@ theme:
   locale: es
 nav:
   - Inicio: 'index.md'
-  - "Módulo 1":
+  - "PHP":
     - "¿Qué es PHP?": 'module_01/section_01.md'
     - "Paradigmas de Programación": 'module_01/section_02.md'
+    - "Estructura de Proyectos": 'module_01/section_03.md'
+    - "Composer": 'module_01/section_04.md'
+  - "Programación en PHP":
+    - "Variables": 'module_02/section_01.md'
 plugins:
   - search
   - mermaid2
