@@ -1,28 +1,30 @@
 # Curso de PHP
 
 
-1. Qué es PHP?
-2. Introducción a programación funcional con PHP
-3. Función Composición en PHP
+1. ¿Qué es PHP?
+2. Programación en PHP
+3. Programación Orientada a Objetos con PHP
+4. Introducción a programación funcional con PHP
+5. Función Composición en PHP
     - Currying y aplicaciones parciales
     - Map, FIlter y funciones fold
     - Transducers
     - Funciones de ayuda
-4. Manejo de Errores en Programación Funcional
+6. Manejo de Errores en Programación Funcional
     - Excepciones
     - Manejo de errores sin excepciones
     - Monads Maybe y Either
     - Patron Railway
-5. Funtores
+7. Funtores
     - Un poco de theoria de categorias
     - Funtores
     - Monads
-6. Computo paralelo
+8. Computo paralelo
     - Threading en PHP
     - MultiThreading en PHP
     - Multiprocesing en PHP
     - Message Brokers
-7. Recursion, patrón match y testeo de properties
+9. Recursion, patrón match y testeo de properties
     - Recursion
     - Patrón Match
     - Test de Properties
