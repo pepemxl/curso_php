@@ -4,7 +4,7 @@ El **multiprocessing** en PHP no existe de forma nativa como en lenguajes como C
 
 ## Opción 1: **Procesos en paralelo con `pcntl_fork()`** (Solo en CLI)
 
-```php
+```php linenums="1"
 <?php
 if (!function_exists('pcntl_fork')) {
     die("pcntl_fork no está disponible. Solo funciona en CLI con extensión pcntl.\n");
@@ -45,7 +45,7 @@ echo "Todos los procesos terminaron.\n";
 
 ## Opción 2: **Ejecutar comandos en paralelo con `exec()` o `shell_exec()`**
 
-```php
+```php linenums="1"
 <?php
 $commands = [
     'php tarea1.php',
@@ -71,7 +71,7 @@ foreach ($processes as $p) {
 
 ## Opción 3: **Usar `popen()` + `&` (fondo)**
 
-```php
+```php linenums="1"
 <?php
 popen('php heavy_task.php arg1 arg2 > log.txt 2>&1 &', 'r');
 echo "Tarea pesada lanzada en background.\n";
@@ -90,7 +90,7 @@ Usa sistemas externos:
 
 **Ejemplo con Redis (usando `predis`):**
 
-```php
+```php linenums="1"
 <?php
 require 'vendor/autoload.php';
 
@@ -117,7 +117,7 @@ $client->lpush('jobs', 'tarea_importante_2');
 
 **Ejemplo con Swoole (multiproceso real):**
 
-```php
+```php linenums="1"
 <?php
 $server = new Swoole\Server("127.0.0.1", 9501, SWOOLE_PROCESS);
 
