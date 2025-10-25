@@ -1,5 +1,5 @@
-PY := python3.11
-PYTHON_VERSION = 3.11
+PY := python3.12
+PYTHON_VERSION = 3.12
 PHP_VERSION = 8.4
 VENV := venv
 REPONAME=$(basename $(pwd))
@@ -81,3 +81,26 @@ clean_docs:
 # Atajo para build + run
 up_docs: build_docs run_docs
 
+################# LOCAL  ENVIRONMENT ############################
+
+.PHONY: local_env
+local_env: $(VENV)
+	@echo "Installed project in virtual environment..."
+	@echo "Linux: Use \"source venv/bin/activate\""
+#	@echo "Linux: Run \"poetry install\""
+	@echo ${REPONAME}
+
+
+.PHONY: clean_local_env
+clean_local_env: ${VENV}
+	rm -rf dist
+	rm -rf ${VENV}
+	rm -rf poetry.lock
+	find . -type f -name *.pyc -delete
+	find . -type d -name __pycache__ -delete
+
+
+.PHONY: clean_local_env_cache
+clean_local_env_cache: ${VENV}
+	find . -type f -name *.pyc -delete
+	ind . -type d -name __pycache__ -delete
