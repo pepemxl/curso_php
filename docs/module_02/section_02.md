@@ -1,10 +1,10 @@
 # Variables de variables
 
+Es una característica de PHP que permite usar el valor de una variable como nombre de otra variable.
+
+
 Aunque es muy útil, en sake del mantenimiento para proyectos grandes recomiendo que usen diccionarios y eviten usar variables de variables.
 
-# Variables de Variables en PHP
-
-Es una característica de PHP que permite usar el valor de una variable como nombre de otra variable.
 
 ## Sintaxis básica
 
